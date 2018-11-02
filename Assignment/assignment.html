@@ -23,14 +23,15 @@
            return (
              <div>
                <h1>Practicing Component</h1>
-               <h1>{this.props.lessonProp}</h1>
+               <h1> {this.props.lessonProp} </h1>
+               <h1>{this.state.lessonState}</h1>
              </div>
            );
          }
        }
        const lesson = {
-         lesson1 : Practicing props.
-       }
+         lesson1 : "Practicing props"
+       };
        ReactDOM.render(
          <Greeting lessonProp= {lesson.lesson1}/>, document.getElementById('first')
        );
